@@ -1,0 +1,67 @@
+.promise-strip{
+
+    width:100%;
+
+    background:#f5f5f5;
+
+    border-top:1px solid #e3e3e3;
+
+    border-bottom:1px solid #e3e3e3;
+
+    padding:28px 40px;
+
+}
+
+.section-label{
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    color:#a8a8a8;
+
+    margin-bottom:20px;
+
+}
+
+.promise-list{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.promise-chip{
+
+    padding:10px 22px;
+
+    border:1px solid #cfcfcf;
+
+    border-radius:999px;
+
+    background:#fff;
+
+    font-size:14px;
+
+    color:#333;
+
+    transition:.3s;
+
+}
+
+.promise-chip:hover{
+
+    background:#222;
+
+    color:#fff;
+
+    border-color:#222;
+
+}

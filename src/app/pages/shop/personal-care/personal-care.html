@@ -1,0 +1,52 @@
+<app-hero
+
+category="PERSONAL CARE & BEAUTY"
+
+title="Skin remembers the soil."
+
+description="Premium skincare, haircare, and anti-aging — from herb to bottle, with nothing diluted in between."
+
+buttonText="Shop Beauty"
+
+image="">
+
+</app-hero>
+
+<app-chips
+
+[chips]="categories">
+
+</app-chips>
+
+<section class="products">
+
+    <div class="section-label">
+
+        [LEAD PRODUCTS]
+
+    </div>
+
+    <div class="product-grid">
+
+        <app-product-card></app-product-card>
+
+        <app-product-card></app-product-card>
+
+        <app-product-card></app-product-card>
+
+    </div>
+
+    <button class="ritual-btn">
+
+        Build Your Ritual
+
+    </button>
+
+</section>
+<app-promise-strip
+    [promises]="[
+        'Cruelty-Free',
+        'No Synthetics',
+        'Made in Indian Soil'
+    ]">
+</app-promise-strip>
