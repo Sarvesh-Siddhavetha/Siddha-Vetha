@@ -14,8 +14,16 @@ import { FeatureCardComponent } from '../../../components/feature-card/feature-c
   FeatureCardComponent
 ],
   templateUrl: './consumer-wellness.html',
-  styleUrl: '../../../common.css'
+  styleUrl: './consumer-wellness.css'
 })
 export class ConsumerWellnessComponent {
-
+  categories = [
+  'Supplements',
+  'Functional Beverages',
+  "Women's Health",
+  'Sleep',
+  "Children's Wellness",
+  'Immunity',
+  'Senior Wellness'
+];
 }

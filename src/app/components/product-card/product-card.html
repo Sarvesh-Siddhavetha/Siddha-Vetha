@@ -1,24 +1,37 @@
 <div class="product-card">
 
     <div class="product-image">
-
-        PRODUCT
-
+        <img
+            [src]="image || 'assets/products/default-product.svg'"
+            [alt]="title || 'Product image'"
+        />
     </div>
 
     <div class="product-body">
 
-        <div class="line long"></div>
+        <span class="product-category">
+            {{ category }}
+        </span>
 
-        <div class="line medium"></div>
+        <h3 class="product-title">
+            {{ title }}
+        </h3>
 
-        <div class="line short"></div>
+        <p class="product-description">
+            {{ description }}
+        </p>
 
-        <button>
+        <div class="product-footer">
 
-            Add to Ritual
+            <span class="product-price">
+                {{ price }}
+            </span>
+            <br>
+            <button class="product-btn">
+                Add to Ritual
+            </button>
 
-        </button>
+        </div>
 
     </div>
 
