@@ -1,288 +1,86 @@
-<!-- ===========================
-     RETREATS HERO SECTION
-============================ -->
+<app-hero
+    category="EXPERIENCES & RETREATS"
+    title="Heal where it's grown."
+    description="Step onto 600 acres of forest and farm for a Siddha medical reset — guided by physicians, rooted in tradition."
+    buttonText="Book a Retreat"
+    image="assets/images/experience/retreats-hero.jpeg">
+</app-hero>
 
-<section class="retreat-hero">
-  <div class="container">
+<app-chips
+    [chips]="categories">
+</app-chips>
 
-    <div class="hero-content">
+<!-- SIGNATURE PROGRAMS -->
 
-      <div class="hero-left">
+<section class="products">
 
-        <span class="section-tag">
-          EXPERIENCES & RETREATS
-        </span>
-
-        <h1>
-          Heal where it's grown.
-        </h1>
-
-        <p>
-          Step onto 600 acres of forest and farm for a Siddha medical reset —
-          guided by physicians, rooted in tradition.
-        </p>
-
-        <div class="hero-buttons">
-
-          <button class="btn-primary">
-            Book a Retreat
-          </button>
-
-          <button class="btn-outline">
-            Talk to a Wellness Advisor
-          </button>
-
-        </div>
-
-      </div>
-
-      <div class="hero-right">
-
-        <img
-          src="https://picsum.photos/600/400" alt="Placeholder">
-
-      </div>
-
+    <div class="section-header">
+        <p>SIGNATURE PROGRAMS</p>
+        <h2>Signature Programs</h2>
     </div>
 
-  </div>
-</section>
+    <div class="product-grid">
 
-<!-- ===========================
-     WHAT'S INSIDE
-============================ -->
+        <app-product-card
+            category="MEDICAL RETREAT"
+            title="The Siddha Medical Retreat"
+            description="Experience a physician-led wellness journey with detox therapies, traditional Siddha treatments, restorative practices, and personalized healing protocols."
+            price="7–21 Days"
+            image="assets/images/experience/retreats1.jpeg">
+        </app-product-card>
 
-<section class="whats-inside">
+        <app-product-card
+            category="LONGEVITY PROGRAM"
+            title="Executive Longevity"
+            description="Designed for high-performing professionals seeking stress recovery, deep rejuvenation, and sustainable long-term health through Siddha wellness."
+            price="Premium"
+            image="assets/images/experience/retreats2.jpeg">
+        </app-product-card>
 
-  <div class="container">
-
-    <span class="section-tag">
-      WHAT'S INSIDE
-    </span>
-
-    <div class="chip-wrapper">
-
-      <div class="chip">
-        Healing Retreats
-      </div>
-
-      <div class="chip">
-        Varmam Therapy
-      </div>
-
-      <div class="chip">
-        Corporate Wellness
-      </div>
-
-      <div class="chip">
-        Stress & Burnout Programs
-      </div>
-
-      <div class="chip">
-        Longevity Stays
-      </div>
+        <app-product-card
+            category="CORPORATE WELLNESS"
+            title="Corporate Mindfulness"
+            description="Transform workplace wellness through immersive retreats, mindfulness experiences, and holistic health programs tailored for modern organizations."
+            price="Custom"
+            image="assets/images/experience/retreats3.jpeg">
+        </app-product-card>
 
     </div>
-
-  </div>
 
 </section>
 
-<!-- ===========================
-     SIGNATURE PROGRAMS
-============================ -->
+<!-- WHAT TO EXPECT -->
 
-<section class="signature-programs">
+<section class="why-made">
 
-  <div class="container">
-
-    <span class="section-tag">
-      SIGNATURE PROGRAMS
-    </span>
-
-    <h2>
-      Signature Programs.
-    </h2>
-
-    <div class="program-grid">
-
-      <!-- CARD 1 -->
-
-      <div class="program-card">
-
-        <div class="program-image">
-
-          <img
-            src="assets/images/experience/program-1.jpg"
-            alt="Medical Retreat">
-
-        </div>
-
-        <div class="program-content">
-
-          <span class="program-label">
-            THE SIDDHA MEDICAL RETREAT
-          </span>
-
-          <h3>
-            The Siddha Medical Retreat
-          </h3>
-
-          <p>
-            7 to 21 days of physician-led detox,
-            therapy, and renewal.
-          </p>
-
-          <button class="btn-outline">
-            Learn More
-          </button>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 2 -->
-
-      <div class="program-card">
-
-        <div class="program-image">
-
-          <img
-            src="assets/images/experience/program-2.jpg"
-            alt="Executive Longevity">
-
-        </div>
-
-        <div class="program-content">
-
-          <span class="program-label">
-            EXECUTIVE LONGEVITY PROGRAM
-          </span>
-
-          <h3>
-            Executive Longevity Program
-          </h3>
-
-          <p>
-            A premium reset for
-            high-performers.
-          </p>
-
-          <button class="btn-outline">
-            Learn More
-          </button>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 3 -->
-
-      <div class="program-card">
-
-        <div class="program-image">
-
-          <img
-            src="assets/images/experience/program-3.jpg"
-            alt="Corporate Wellness">
-
-        </div>
-
-        <div class="program-content">
-
-          <span class="program-label">
-            CORPORATE MINDFULNESS CONTRACTS
-          </span>
-
-          <h3>
-            Corporate Mindfulness Contracts
-          </h3>
-
-          <p>
-            Bring conscious living to
-            your whole team.
-          </p>
-
-          <button class="btn-outline">
-            Learn More
-          </button>
-
-        </div>
-
-      </div>
-
+    <div class="section-header">
+        <p>WHAT TO EXPECT</p>
+        <h2>Your Wellness Journey</h2>
     </div>
 
-    <div class="cta-wrapper">
+    <div class="feature-grid">
 
-      <button class="btn-primary">
-        Reserve Your Place
-      </button>
+        <app-feature-card
+            category="STEP 01"
+            title="Arrival Assessment"
+            description="Begin your retreat with a comprehensive Muppini three-humor evaluation to understand your constitution and create a personalized wellness plan."
+            image="assets/images/retreats/assessment.png">
+        </app-feature-card>
 
-    </div>
+        <app-feature-card
+            category="STEP 02"
+            title="Healing Therapies"
+            description="Experience Varmam therapy, detox treatments, yoga, Kalari training, herbal medicine, and nourishing Siddha cuisine throughout your stay."
+            image="assets/images/retreats/therapy.png">
+        </app-feature-card>
 
-  </div>
-
-</section>
-
-<!-- ===========================
-     WHAT TO EXPECT
-============================ -->
-
-<section class="expect-section">
-
-  <div class="container">
-
-    <span class="section-tag">
-      WHAT TO EXPECT
-    </span>
-
-    <h2>
-      What to expect.
-    </h2>
-
-    <div class="expect-grid">
-
-      <div class="expect-card">
-
-        <span class="expect-number">
-          01 · ASSESSMENT
-        </span>
-
-        <p>
-          Muppini three-humor reading on arrival.
-        </p>
-
-      </div>
-
-      <div class="expect-card">
-
-        <span class="expect-number">
-          02 · THERAPY
-        </span>
-
-        <p>
-          Varmam, detox, yoga,
-          Kalari, culinary medicine.
-        </p>
-
-      </div>
-
-      <div class="expect-card">
-
-        <span class="expect-number">
-          03 · CONTINUATION
-        </span>
-
-        <p>
-          Leave with a protocol
-          and monthly herb kits.
-        </p>
-
-      </div>
+        <app-feature-card
+            category="STEP 03"
+            title="Continue at Home"
+            description="Leave with a customized wellness protocol, monthly herbal formulations, and ongoing guidance to continue your healing journey."
+            image="assets/images/retreats/continuation.png">
+        </app-feature-card>
 
     </div>
-
-  </div>
 
 </section>

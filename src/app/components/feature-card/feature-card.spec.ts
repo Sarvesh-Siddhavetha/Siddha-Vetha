@@ -1,22 +1,34 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FeatureCard } from './feature-card';
+import { FeatureCardComponent } from './feature-card';
 
-describe('FeatureCard', () => {
-  let component: FeatureCard;
-  let fixture: ComponentFixture<FeatureCard>;
+describe('FeatureCardComponent', () => {
+  let component: FeatureCardComponent;
+  let fixture: ComponentFixture<FeatureCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FeatureCard],
+      imports: [FeatureCardComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(FeatureCard);
+    fixture = TestBed.createComponent(FeatureCardComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render the provided image when available', () => {
+    component.image = 'assets/images/institutions/digital1.jpeg';
+    component.title = 'SiddhaAI';
+
+    fixture.detectChanges();
+
+    const img = fixture.nativeElement.querySelector('img.feature-image');
+    expect(img).toBeTruthy();
+    expect(img.getAttribute('src')).toContain('assets/images/institutions/digital1.jpeg');
+    expect(img.getAttribute('alt')).toBe('SiddhaAI');
   });
 });

@@ -1,20 +1,111 @@
+/* ==========================================
+   PREVENTIVE HEALTHCARE
+========================================== */
+
+.why-made{
+    padding:80px 6%;
+    background:#ffffff;
+}
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header{
+    margin-bottom:45px;
+}
+
+.section-header p{
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#b6b6b6;
+    margin-bottom:10px;
+    font-weight:500;
+}
+
+.section-header h2{
+    font-size:42px;
+    font-weight:600;
+    color:#1f1f1f;
+}
+
+/* ==========================================
+   FEATURE GRID
+========================================== */
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:32px;
+}
+
+/* ==========================================
+   FEATURE WRAPPER
+========================================== */
+
 .feature-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
 
-    position:relative;
+/* ==========================================
+   FEATURE CARD
+========================================== */
+
+app-feature-card{
+    display:block;
+    height:100%;
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.secondary-btn{
+
+    align-self:flex-start;
+
+    padding:14px 30px;
+
+    border:1px solid #1f1f1f;
+
+    background:#ffffff;
+
+    color:#1f1f1f;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+    transition:.3s ease;
 
 }
 
-.feature-wrapper .secondary-btn{
+.secondary-btn:hover{
 
-    margin:20px 0 0 25px;
+    background:#1f1f1f;
+
+    color:#ffffff;
 
 }
+
+/* ==========================================
+   MEMBERSHIP STRIP
+========================================== */
 
 .membership-strip{
 
-    padding:70px 8%;
+    padding:70px 6%;
 
     background:#f5f5f5;
+
+    border-top:1px solid #ececec;
 
 }
 
@@ -24,11 +115,9 @@
 
     justify-content:space-between;
 
-    gap:40px;
+    gap:30px;
 
     flex-wrap:wrap;
-
-    margin-top:25px;
 
 }
 
@@ -38,60 +127,103 @@
 
     align-items:center;
 
-    gap:12px;
+    gap:15px;
 
-    font-size:18px;
+    flex:1;
 
-    color:#333;
+    min-width:250px;
 
 }
 
 .dot{
 
-    width:22px;
+    width:18px;
 
-    height:22px;
+    height:18px;
 
     border-radius:50%;
 
-    background:#d9d9d9;
+    background:#d8d8d8;
 
     flex-shrink:0;
 
 }
 
+.membership-item span{
+
+    font-size:16px;
+
+    color:#444;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.membership-items{
+
+flex-direction:column;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-made,
+.membership-strip{
+
+padding:70px 25px;
+
+}
+
+.section-header h2{
+
+font-size:34px;
+
+}
+
 .secondary-btn{
 
-    background:#fff;
+width:100%;
 
-    border:1px solid #222;
-
-    padding:12px 28px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    transition:.3s;
+text-align:center;
 
 }
 
-.secondary-btn:hover{
+}
 
-    background:#222;
+@media(max-width:480px){
 
-    color:#fff;
+.section-header h2{
+
+font-size:28px;
 
 }
 
-@media(max-width:900px){
+.section-header p{
 
-    .membership-items{
+font-size:11px;
 
-        flex-direction:column;
+letter-spacing:1.5px;
 
-        gap:25px;
+}
 
-    }
+.membership-item{
+
+min-width:100%;
+
+}
 
 }

@@ -1,21 +1,24 @@
 <div class="feature-card">
 
-    <div class="icon-placeholder">
-
-        🌿
-
+    <div class="feature-image-wrap">
+        <img
+            class="feature-image"
+            [src]="image || fallbackImage"
+            [alt]="title || 'Feature image'"
+            (error)="handleImageError($event)"
+        />
     </div>
 
+    <span class="feature-category" *ngIf="category">
+        {{ category }}
+    </span>
+
     <h3>
-
         {{ title }}
-
     </h3>
 
     <p>
-
         {{ description }}
-
     </p>
 
 </div>

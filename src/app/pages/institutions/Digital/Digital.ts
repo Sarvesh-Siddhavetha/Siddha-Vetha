@@ -13,8 +13,8 @@ import { PromiseStripComponent } from '../../../components/promise-strip/promise
     FeatureCardComponent,
     PromiseStripComponent
   ],
-  templateUrl: './digital.html',
-  styleUrl: '../../../common.css'
+  templateUrl: './Digital.html',
+  styleUrl: './Digital.css'
 })
 export class DigitalComponent {
 
