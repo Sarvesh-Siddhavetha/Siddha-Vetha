@@ -255,10 +255,16 @@ button:hover{
     box-shadow:0 18px 40px rgba(28,43,32,.1);
 }
 
-.eco-card img{
+ .eco-icon{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     width:44px;
     height:44px;
     margin-bottom:20px;
+    border-radius:50%;
+    background:#e8efe6;
+    font-size:1.2rem;
 }
 
 .eco-card h3{
