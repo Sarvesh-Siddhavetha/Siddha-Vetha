@@ -1,13 +1,16 @@
 <section class="chips-section">
 
-    @for (chip of chips; track chip) {
+    <div class="chips-container">
 
-        <button class="chip">
+        @for (chip of chips; track chip) {
 
-            {{ chip }}
+            <app-button
+                [label]="chip"
+                variant="ghost">
+            </app-button>
 
-        </button>
+        }
 
-    }
+    </div>
 
 </section>

@@ -3,6 +3,7 @@ import { HeroComponent } from '../../../components/hero/hero';
 import { ChipsComponent } from '../../../components/chips/chips';
 import { FeatureCardComponent } from '../../../components/feature-card/feature-card';
 import { PromiseStripComponent } from '../../../components/promise-strip/promise-strip';
+import { ButtonComponent } from '../../../components/button/button';
 
 @Component({
   selector: 'app-preventive-healthcare',
@@ -11,7 +12,7 @@ import { PromiseStripComponent } from '../../../components/promise-strip/promise
     HeroComponent,
     ChipsComponent,
     FeatureCardComponent,
-    PromiseStripComponent
+    ButtonComponent
   ],
   templateUrl: './preventive-healthcare.html',
   styleUrl: './Preventive-Healthcare.css'

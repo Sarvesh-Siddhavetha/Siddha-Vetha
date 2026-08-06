@@ -3,6 +3,7 @@ import { HeroComponent } from '../../../components/hero/hero';
 import { ChipsComponent } from '../../../components/chips/chips';
 import { ProductCardComponent } from '../../../components/product-card/product-card';
 import { PromiseStripComponent } from '../../../components/promise-strip/promise-strip';
+import { ButtonComponent } from '../../../components/button/button';
 @Component({
   selector: 'app-personal-care',
   standalone: true,
@@ -10,7 +11,8 @@ import { PromiseStripComponent } from '../../../components/promise-strip/promise
     HeroComponent,
     ChipsComponent,
     ProductCardComponent,
-    PromiseStripComponent
+    PromiseStripComponent,
+    ButtonComponent
   ],
   templateUrl: './personal-care.html',
   styleUrl: '../../../common.css'

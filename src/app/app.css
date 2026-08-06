@@ -1,11 +1,63 @@
+/* =====================================================
+   APPLICATION LAYOUT
+===================================================== */
+
 .page-layout{
-    display: block;
+
+    display:flex;
+
+    width:100%;
+
+    min-height:100vh;
+
 }
 
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
 .page-content{
-    margin-top: 70px;          /* Navbar height */
-    margin-left: 320px;        /* 300px sidebar + 20px gap */
-    padding-right: 30px;
-    box-sizing: border-box;
-    min-height: calc(100vh - 70px);
+
+    flex:1;
+
+    margin-top:80px;             /* Fixed navbar height */
+
+    margin-left:300px;           /* Sidebar width */
+
+    padding:0;
+
+    background:var(--background);
+
+    min-height:calc(100vh - 80px);
+
+    transition:all .3s ease;
+
+}
+
+/* =====================================================
+   EVERY PAGE
+===================================================== */
+
+.page-content > *{
+
+    width:100%;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:992px){
+
+    .page-content{
+
+        margin-left:0;
+
+        margin-top:72px;
+
+        width:100%;
+
+    }
+
 }

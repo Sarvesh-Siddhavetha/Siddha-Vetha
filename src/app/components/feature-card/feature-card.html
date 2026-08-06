@@ -1,24 +1,37 @@
 <div class="feature-card">
 
     <div class="feature-image-wrap">
+
         <img
             class="feature-image"
             [src]="image || fallbackImage"
             [alt]="title || 'Feature image'"
-            (error)="handleImageError($event)"
-        />
+            (error)="handleImageError($event)">
+
     </div>
 
-    <span class="feature-category" *ngIf="category">
-        {{ category }}
-    </span>
+    <div class="feature-content">
 
-    <h3>
-        {{ title }}
-    </h3>
+        <span
+            class="feature-category"
+            *ngIf="category">
 
-    <p>
-        {{ description }}
-    </p>
+            {{ category }}
+
+        </span>
+
+        <h3>
+
+            {{ title }}
+
+        </h3>
+
+        <p>
+
+            {{ description }}
+
+        </p>
+
+    </div>
 
 </div>

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ButtonComponent } from '../button/button';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, ButtonComponent],
   templateUrl: './footer.html',
   styleUrl: './footer.css'
 })

@@ -142,36 +142,6 @@
 }
 
 
-/* ===========================
-   BUTTON
-=========================== */
-
-.primary-btn{
-
-    background:#1f1f1f;
-
-    color:#fff;
-
-    border:none;
-
-    padding:16px 34px;
-
-    font-size:16px;
-
-    border-radius:8px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.primary-btn:hover{
-
-    background:#333;
-
-}
-
 
 /* ===========================
    RESPONSIVE

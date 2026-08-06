@@ -1,6 +1,6 @@
-/* ===========================
+/* =====================================================
    NAVBAR
-=========================== */
+===================================================== */
 
 .navbar{
 
@@ -12,51 +12,105 @@
 
     width: 100%;
 
-    height: 70px;
+    height: 80px;
 
-    display: flex;
+    background: #ffffff;
 
-    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+
+    display: grid;
+
+    grid-template-columns: 260px 1fr 260px;
 
     align-items: center;
 
-    padding: 0 70px;
-
-    background: #fff;
-
-    border-bottom: 1px solid #ececec;
+    padding: 0 30px;
 
     box-sizing: border-box;
 
     z-index: 1000;
 
+    box-shadow: 0 2px 12px rgba(0,0,0,.05);
+
 }
 
-/* ===========================
+/* =====================================================
    LOGO
-=========================== */
+===================================================== */
 
-.logo img{
-
-    height: 75px;
-    font-size: 8px;
-    object-fit: contain;
-
-}
-
-/* ===========================
-   NAV LINKS
-=========================== */
-
-.nav-links{
+.logo{
 
     display: flex;
 
     align-items: center;
 
-    gap: 36px;
+    gap: 12px;
+
+    text-decoration: none;
+
+    justify-self: start;
+
+}
+
+.logo img{
+
+    width: 48px;
+
+    height: 48px;
+
+    object-fit: contain;
+
+}
+
+.logo-text{
+
+    display: flex;
+
+    flex-direction: column;
+
+    line-height: 1.15;
+
+}
+
+.company-name{
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #184795;
+
+    letter-spacing: .5px;
+
+}
+
+.company-tagline{
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    color: #777;
+
+    text-transform: uppercase;
+
+}
+
+/* =====================================================
+   NAV LINKS
+===================================================== */
+
+.nav-links{
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 
     list-style: none;
+
+    gap: 28px;
 
     margin: 0;
 
@@ -64,117 +118,131 @@
 
 }
 
+.nav-links li{
+
+    list-style: none;
+
+}
+
 .nav-links a{
 
     text-decoration: none;
 
-    color: #222;
+    color: #1f1f1f;
 
-    font-size: 16px;
+    font-size: 15px;
 
     font-weight: 500;
 
-    transition: .3s;
+    transition: .25s ease;
+
+    position: relative;
 
 }
 
 .nav-links a:hover{
 
-    color: #4d3021;
+    color: #184795;
 
 }
 
-/* ===========================
+.nav-links a::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #184795;
+
+    transition: .25s;
+
+}
+
+.nav-links a:hover::after,
+
+.nav-links a.active::after{
+
+    width: 100%;
+
+}
+
+.nav-links a.active{
+
+    color: #184795;
+
+    font-weight: 600;
+
+}
+
+/* =====================================================
    BUTTONS
-=========================== */
+===================================================== */
 
 .nav-buttons{
 
     display: flex;
 
+    justify-content: flex-end;
+
+    align-items: center;
+
     gap: 12px;
 
 }
 
-.shop-btn{
-
-    background: #1f1f1f;
-
-    color: #fff;
-
-    border: none;
-
-    border-radius: 6px;
-
-    padding: 12px 24px;
-
-    cursor: pointer;
-
-    font-weight: 600;
-
-    transition: .3s;
-
-}
-
-.shop-btn:hover{
-
-    background: #333;
-
-}
-
-.retreat-btn{
-
-    background: #fff;
-
-    color: #1f1f1f;
-
-    border: 1px solid #d8d8d8;
-
-    border-radius: 6px;
-
-    padding: 12px 24px;
-
-    cursor: pointer;
-
-    font-weight: 500;
-
-    transition: .3s;
-
-}
-
-.retreat-btn:hover{
-
-    background: #f7f7f7;
-
-}
-
-/* ===========================
-   PAGE OFFSET
-=========================== */
-
-/* Add this class to the element below the navbar */
-
-.page-content{
-
-    margin-top: 70px;
-
-}
-
-/* ===========================
+/* =====================================================
    RESPONSIVE
-=========================== */
+===================================================== */
 
-@media (max-width:1000px){
+@media (max-width:1200px){
 
     .navbar{
 
+        grid-template-columns: 220px 1fr 220px;
+
         padding: 0 20px;
 
-        flex-wrap: wrap;
+    }
+
+    .nav-links{
+
+        gap: 20px;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .navbar{
 
         height: auto;
 
-        min-height: 70px;
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+
+        padding: 18px;
+
+    }
+
+    .logo{
+
+        width: 100%;
+
+        justify-content: center;
 
     }
 
@@ -186,9 +254,7 @@
 
         flex-wrap: wrap;
 
-        gap: 20px;
-
-        margin: 15px 0;
+        gap: 18px;
 
     }
 
@@ -198,23 +264,27 @@
 
         justify-content: center;
 
-        margin-bottom: 15px;
-
-    }
-
-    .page-content{
-
-        margin-top: 140px;
-
     }
 
 }
 
 @media (max-width:768px){
 
+    .logo-text{
+
+        display: none;
+
+    }
+
     .nav-links{
 
-        gap: 18px;
+        gap: 14px;
+
+    }
+
+    .nav-links a{
+
+        font-size: 14px;
 
     }
 

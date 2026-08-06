@@ -45,49 +45,6 @@ p{
 }
 
 /* ===========================
-   Buttons
-=========================== */
-
-button{
-    border:none;
-    outline:none;
-    cursor:pointer;
-    transition:.3s;
-}
-
-button:hover{
-    transform:translateY(-2px);
-}
-
-.btn-primary{
-    background:#2f4a36;
-    color:#ffffff;
-    padding:14px 32px;
-    border-radius:999px;
-    font-size:.95rem;
-    font-weight:600;
-}
-
-.btn-primary:hover{
-    background:#1c2b20;
-}
-
-.btn-outline{
-    background:transparent;
-    color:#2f4a36;
-    padding:13px 32px;
-    border-radius:999px;
-    border:1.5px solid #2f4a36;
-    font-size:.95rem;
-    font-weight:600;
-}
-
-.btn-outline:hover{
-    background:#2f4a36;
-    color:#ffffff;
-}
-
-/* ===========================
    Section Tag
 =========================== */
 
@@ -320,8 +277,8 @@ button:hover{
     max-width:480px;
 }
 
-.split-content .btn-primary,
-.split-content .btn-outline{
+.split-content app-button{
+    display:block;
     margin-top:26px;
 }
 
@@ -399,14 +356,8 @@ button:hover{
     margin-top:30px;
 }
 
-.partner-buttons .btn-outline{
-    color:#ffffff;
-    border-color:rgba(255,255,255,.6);
-}
-
-.partner-buttons .btn-outline:hover{
-    background:#ffffff;
-    color:#1c2b20;
+.partner-buttons app-button{
+    display:inline-flex;
 }
 
 /* ===========================
@@ -618,8 +569,8 @@ button:hover{
         flex-direction:column;
     }
 
-    .btn-primary,
-    .btn-outline{
+    .hero-buttons app-button,
+    .partner-buttons app-button{
         width:100%;
         text-align:center;
     }

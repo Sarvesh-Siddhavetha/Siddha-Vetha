@@ -63,28 +63,6 @@ app-feature-card{
 }
 
 /* ==========================================
-   BUTTON
-========================================== */
-
-.primary-btn{
-    margin-top:40px;
-    padding:16px 34px;
-    background:#1f1f1f;
-    color:#fff;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    font-weight:500;
-    cursor:pointer;
-    transition:.3s ease;
-}
-
-.primary-btn:hover{
-    background:#333;
-    transform:translateY(-2px);
-}
-
-/* ==========================================
    RESPONSIVE
 ========================================== */
 

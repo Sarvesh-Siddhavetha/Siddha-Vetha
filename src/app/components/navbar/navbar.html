@@ -1,68 +1,82 @@
 <nav class="navbar">
 
-    <div class="logo">
+    <!-- LOGO -->
 
-        <a routerLink="/" class="logo">
+    <a routerLink="/home" class="logo">
 
-    <img
-        src="assets/images/logo/logo.png"
-        alt="Siddhavetha Logo">
+        <img
+            src="assets/images/logo/logo.png"
+            alt="Siddhavetha Logo">
 
-   
+        <div class="logo-text">
 
-</a>
+            <span class="company-name">
+                SIDDHAVETHA
+            </span>
 
-    </div>
+            <span class="company-tagline">
+                GLOBAL INNOVATIONS
+            </span>
+
+        </div>
+
+    </a>
+
+    <!-- NAVIGATION -->
 
     <ul class="nav-links">
 
         <li>
-            <a routerLink="/consumer-wellness">
+            <a routerLink="/consumer-wellness" routerLinkActive="active">
                 Shop
             </a>
         </li>
 
         <li>
-            <a routerLink="/retreats">
+            <a routerLink="/retreats" routerLinkActive="active">
                 Retreats
             </a>
         </li>
 
         <li>
-            <a routerLink="/science">
+            <a routerLink="/The-Science" routerLinkActive="active">
                 The Science
             </a>
         </li>
 
         <li>
-            <a routerLink="/digital">
+            <a routerLink="/digital" routerLinkActive="active">
                 Digital
             </a>
         </li>
 
         <li>
-            <a routerLink="/about">
+            <a routerLink="/about" routerLinkActive="active">
                 Our Story
             </a>
         </li>
 
         <li>
-            <a routerLink="/partner">
+            <a routerLink="/partner" routerLinkActive="active">
                 Partner
             </a>
         </li>
 
     </ul>
 
+    <!-- BUTTONS -->
+
     <div class="nav-buttons">
 
-        <button class="shop-btn">
-            Shop Now
-        </button>
+        <app-button
+            label="Shop Now"
+            variant="primary">
+        </app-button>
 
-        <button class="retreat-btn">
-            Book a Retreat
-        </button>
+        <app-button
+            label="Book a Retreat"
+            variant="outline">
+        </app-button>
 
     </div>
 

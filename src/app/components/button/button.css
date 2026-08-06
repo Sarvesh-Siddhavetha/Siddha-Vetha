@@ -1,0 +1,149 @@
+/* =====================================================
+   BASE BUTTON
+===================================================== */
+
+button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    padding:14px 28px;
+
+    border-radius:10px;
+
+    font-family:var(--body-font);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+    border:none;
+
+    white-space:nowrap;
+
+}
+
+/* =====================================================
+   PRIMARY
+===================================================== */
+
+.primary{
+
+    background:var(--primary-blue);
+
+    color:white;
+
+}
+
+.primary:hover{
+
+    background:var(--secondary-blue);
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 24px rgba(24,71,149,.22);
+
+}
+
+/* =====================================================
+   SECONDARY
+===================================================== */
+
+.secondary{
+
+    background:var(--primary-green);
+
+    color:white;
+
+}
+
+.secondary:hover{
+
+    background:#3d961d;
+
+}
+
+/* =====================================================
+   OUTLINE
+===================================================== */
+
+.outline{
+
+    background:white;
+
+    color:var(--primary-blue);
+
+    border:1px solid var(--primary-blue);
+
+}
+
+.outline:hover{
+
+    background:var(--primary-blue);
+
+    color:white;
+
+}
+
+/* =====================================================
+   DARK
+===================================================== */
+
+.dark{
+
+    background:#1f1f1f;
+
+    color:white;
+
+}
+
+.dark:hover{
+
+    background:#000;
+
+}
+
+/* =====================================================
+   GHOST
+===================================================== */
+
+.ghost{
+
+    background:transparent;
+
+    color:var(--primary-blue);
+
+    border:1px solid transparent;
+
+}
+
+.ghost:hover{
+
+    background:#f5f7fb;
+
+}
+
+/* =====================================================
+   DISABLED
+===================================================== */
+
+button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}

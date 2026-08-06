@@ -60,42 +60,6 @@ app-feature-card{
 }
 
 /* ==========================================
-   BUTTON
-========================================== */
-
-.secondary-btn{
-
-    align-self:flex-start;
-
-    padding:14px 30px;
-
-    border:1px solid #1f1f1f;
-
-    background:#ffffff;
-
-    color:#1f1f1f;
-
-    border-radius:8px;
-
-    font-size:15px;
-
-    font-weight:500;
-
-    cursor:pointer;
-
-    transition:.3s ease;
-
-}
-
-.secondary-btn:hover{
-
-    background:#1f1f1f;
-
-    color:#ffffff;
-
-}
-
-/* ==========================================
    MEMBERSHIP STRIP
 ========================================== */
 

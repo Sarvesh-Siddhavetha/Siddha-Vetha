@@ -1,9 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
+  standalone: true,
   imports: [],
   templateUrl: './button.html',
-  styleUrl: './button.css',
+  styleUrl: './button.css'
 })
-export class Button {}
+export class ButtonComponent {
+
+  @Input() label = 'Button';
+
+  @Input() variant:
+    | 'primary'
+    | 'secondary'
+    | 'outline'
+    | 'dark'
+    | 'ghost' = 'primary';
+
+  @Input() disabled = false;
+
+}
