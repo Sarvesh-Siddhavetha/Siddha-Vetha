@@ -13,8 +13,8 @@ import { PromiseStripComponent } from '../../../components/promise-strip/promise
     FeatureCardComponent,
     PromiseStripComponent
   ],
-  templateUrl: './agriculture.html',
-  styleUrl: '../../../common.css'
+  templateUrl: './Agriculture.html',
+  styleUrl: './Agriculture.css'
 })
 export class AgricultureComponent {
 

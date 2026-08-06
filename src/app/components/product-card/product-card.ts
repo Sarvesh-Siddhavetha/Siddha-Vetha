@@ -17,4 +17,6 @@ export class ProductCardComponent {
 
   @Input() price = '';
 
+  @Input() image = '';
+
 }

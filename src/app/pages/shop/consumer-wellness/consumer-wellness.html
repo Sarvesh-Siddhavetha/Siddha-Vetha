@@ -3,10 +3,10 @@
   title="Feel the difference of the real thing."
   description="Daily supplements, functional tonics, and women's formulations built on Siddha, made on our farm, proven by results."
   buttonText="Shop Wellness"
-  image="">
+  image="assets/images/shop/consumer-wellness-hero.png">
 </app-hero>
 
-<app-chips></app-chips>
+<app-chips [chips]="categories"></app-chips>
 
 <section class="products">
 
@@ -17,35 +17,31 @@
 
     <div class="product-grid">
 
-        <app-product-card
-            category="SUPPLEMENT"
-            title="Ashwagandha"
-            description="Supports stress management and daily vitality."
-            price="₹899">
-        </app-product-card>
+    <app-product-card
+        category="HERBAL SERUM"
+        title="Ageless Elixir"
+        description="A potent botanical serum crafted with time-honored Siddha herbs to deeply nourish, restore radiance, and support naturally youthful skin."
+        price="₹1,299"
+        image="assets/images/shop/consumer-wellness-product1.png">
+    </app-product-card>
 
-        <app-product-card
-            category="TONIC"
-            title="Herbal Elixir"
-            description="Daily wellness tonic crafted using Siddha herbs."
-            price="₹749">
-        </app-product-card>
+    <app-product-card
+        category="WELLNESS RITUAL"
+        title="Bath Ritual Collection"
+        description="Transform your daily routine into a calming self-care ritual with handcrafted bath essentials infused with pure herbs and aromatic botanicals."
+        price="₹1,499"
+        image="assets/images/shop/consumer-wellness-product2.png">
+    </app-product-card>
 
-        <app-product-card
-            category="IMMUNITY"
-            title="Immunity Boost"
-            description="A balanced blend to support your immune system."
-            price="₹999">
-        </app-product-card>
+    <app-product-card
+        category="HANDMADE SOAP"
+        title="Artisan Herbal Soaps"
+        description="Handcrafted herbal soaps made with natural oils and plant extracts to gently cleanse, moisturize, and refresh every skin type."
+        price="₹599"
+        image="assets/images/shop/consumer-wellness-product3.png">
+    </app-product-card>
 
-        <app-product-card
-            category="WELLNESS"
-            title="Sleep Formula"
-            description="Natural ingredients that promote restful sleep."
-            price="₹699">
-        </app-product-card>
-
-    </div>
+</div>
 
 </section>
 
