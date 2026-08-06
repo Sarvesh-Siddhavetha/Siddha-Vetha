@@ -1,0 +1,239 @@
+.footer{
+
+    background:#111;
+
+    color:#fff;
+
+    padding:70px 6% 35px;
+
+}
+
+.footer-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.brand-title{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    color:#b9b9b9;
+
+    margin-bottom:14px;
+
+}
+
+.brand-text{
+
+    font-size:24px;
+
+    font-weight:300;
+
+    color:white;
+
+    margin-bottom:60px;
+
+}
+
+.footer-links{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:70px;
+
+}
+
+.footer-column h4{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    color:#c8c8c8;
+
+    margin-bottom:22px;
+
+}
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.footer-column a{
+
+    text-decoration:none;
+
+    color:#efefef;
+
+    margin-bottom:14px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:#d7b46a;
+
+}
+
+.footer-bottom{
+
+    margin-top:55px;
+
+    padding-top:35px;
+
+    border-top:1px solid #333;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.newsletter{
+
+    display:flex;
+
+    gap:10px;
+
+    flex:1;
+
+}
+
+.newsletter input{
+
+    flex:1;
+
+    padding:15px 18px;
+
+    background:#111;
+
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:6px;
+
+    outline:none;
+
+}
+
+.newsletter input::placeholder{
+
+    color:#888;
+
+}
+
+.newsletter button{
+
+    background:white;
+
+    color:black;
+
+    border:none;
+
+    border-radius:6px;
+
+    padding:15px 28px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.newsletter button:hover{
+
+    background:#ececec;
+
+}
+
+.copyright{
+
+    color:#888;
+
+    font-size:14px;
+
+    white-space:nowrap;
+
+}
+
+@media(max-width:1000px){
+
+.footer-links{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:45px;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.newsletter{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.footer{
+
+padding:55px 25px;
+
+}
+
+.footer-links{
+
+grid-template-columns:1fr;
+
+}
+
+.newsletter{
+
+flex-direction:column;
+
+}
+
+.newsletter button{
+
+width:100%;
+
+}
+
+.copyright{
+
+white-space:normal;
+
+}
+
+}

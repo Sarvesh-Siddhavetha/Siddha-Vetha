@@ -1,0 +1,187 @@
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 70px;
+
+    background:#fff;
+
+    border-bottom:1px solid #ececec;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo img{
+
+    height:42px;
+    object-fit:contain;
+
+}
+
+/* ===========================
+   NAV LINKS
+=========================== */
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:36px;
+
+    list-style:none;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#4d3021;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.nav-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.shop-btn{
+
+    background:#1f1f1f;
+
+    color:white;
+
+    border:none;
+
+    border-radius:6px;
+
+    padding:12px 24px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.shop-btn:hover{
+
+    background:#333;
+
+}
+
+.retreat-btn{
+
+    background:white;
+
+    color:#1f1f1f;
+
+    border:1px solid #d8d8d8;
+
+    border-radius:6px;
+
+    padding:12px 24px;
+
+    cursor:pointer;
+
+    font-weight:500;
+
+}
+
+.retreat-btn:hover{
+
+    background:#f7f7f7;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1000px){
+
+.navbar{
+
+padding:20px;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.nav-links{
+
+width:100%;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.nav-buttons{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+
+gap:18px;
+
+}
+
+.shop-btn,
+.retreat-btn{
+
+width:100%;
+
+}
+
+.nav-buttons{
+
+flex-direction:column;
+
+}
+
+}
