@@ -1,9 +1,10 @@
+/* ==========================================
+   HERO SECTION
+========================================== */
+
 .hero{
 
     width:100%;
-    max-width:1400px;
-
-    margin:auto;
 
     display:flex;
 
@@ -11,15 +12,23 @@
 
     align-items:center;
 
-    gap:70px;
+    gap:50px;
 
-    padding:80px 50px;
+    padding:60px 40px;
+
+    box-sizing:border-box;
 
 }
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
 
 .hero-content{
 
     flex:1;
+
+    max-width:650px;
 
 }
 
@@ -29,9 +38,11 @@
 
     letter-spacing:4px;
 
-    font-size:13px;
+    font-size:12px;
 
-    color:#7b7b7b;
+    font-weight:500;
+
+    color:#9d9d9d;
 
     margin-bottom:18px;
 
@@ -39,7 +50,7 @@
 
 .hero h1{
 
-    font-size:64px;
+    font-size:60px;
 
     line-height:1.15;
 
@@ -47,7 +58,7 @@
 
     color:#111;
 
-    margin-bottom:25px;
+    margin:0 0 24px;
 
 }
 
@@ -55,31 +66,31 @@
 
     font-size:18px;
 
-    color:#555;
-
     line-height:1.8;
 
-    max-width:520px;
+    color:#555;
 
-    margin-bottom:40px;
+    margin-bottom:36px;
 
 }
 
 .hero button{
 
-    background:#222;
+    background:#1f1f1f;
 
-    color:white;
-
-    padding:16px 34px;
+    color:#fff;
 
     border:none;
 
     border-radius:8px;
 
-    cursor:pointer;
+    padding:15px 32px;
 
     font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
 
     transition:.3s;
 
@@ -87,9 +98,13 @@
 
 .hero button:hover{
 
-    background:black;
+    background:#333;
 
 }
+
+/* ==========================================
+   IMAGE
+========================================== */
 
 .hero-image{
 
@@ -99,23 +114,57 @@
 
     justify-content:flex-end;
 
+    align-items:center;
+
 }
 
 .hero-image img{
 
     width:100%;
 
-    max-width:600px;
+    max-width:560px;
 
-    border-radius:12px;
+    height:auto;
+
+    border-radius:14px;
 
     object-fit:cover;
 
 }
 
-/* ---------- Responsive ---------- */
+/* ==========================================
+   TABLET
+========================================== */
 
-@media(max-width:992px){
+@media (max-width:1100px){
+
+.hero{
+
+gap:35px;
+
+padding:50px 30px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero-image img{
+
+max-width:480px;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
 
 .hero{
 
@@ -123,13 +172,19 @@ flex-direction:column;
 
 text-align:center;
 
+padding:40px 20px;
+
+}
+
+.hero-content{
+
+max-width:100%;
+
 }
 
 .hero-description{
 
-margin:auto;
-
-margin-bottom:35px;
+margin-bottom:30px;
 
 }
 
@@ -137,11 +192,19 @@ margin-bottom:35px;
 
 justify-content:center;
 
+margin-top:30px;
+
+}
+
+.hero-image img{
+
+max-width:100%;
+
 }
 
 .hero h1{
 
-font-size:48px;
+font-size:40px;
 
 }
 

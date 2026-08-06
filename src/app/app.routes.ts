@@ -1,8 +1,6 @@
 import { Routes } from '@angular/router';
-<<<<<<< HEAD
-=======
+
 import { Home } from './pages/home/home';
->>>>>>> dd0fde5 (first commit)
 import { ConsumerWellnessComponent } from './pages/shop/consumer-wellness/consumer-wellness';
 import { PersonalCareComponent } from './pages/shop/personal-care/personal-care';
 import { SustainableLivingComponent } from './pages/shop/sustainable-living/sustainable-living';
@@ -11,16 +9,12 @@ import { AgricultureComponent } from './pages/institutions/Agriculture/Agricultu
 import { PreventiveHealthcareComponent } from './pages/institutions/Preventive-Healthcare/Preventive-Healthcare';
 import { DigitalComponent } from './pages/institutions/Digital/Digital';
 import { RetreatsComponent } from './pages/experience/retreats/retreats.component';
-import {TourismComponent} from './pages/experience/tourism/tourism.component';
+import { TourismComponent } from './pages/experience/tourism/tourism.component';
+import { PartnerInvestComponent } from './pages/company/partner-invest/partner-invest';
+import { OurStoryComponent } from './pages/company/our-story/our-story';
 export const routes: Routes = [
   {
     path: '',
-<<<<<<< HEAD
-    redirectTo: 'consumer-wellness',
-    pathMatch: 'full'
-  },
-  {
-=======
     redirectTo: 'home',
     pathMatch: 'full'
   },
@@ -29,12 +23,11 @@ export const routes: Routes = [
     component: Home
   },
   {
->>>>>>> dd0fde5 (first commit)
     path: 'consumer-wellness',
     component: ConsumerWellnessComponent
   },
   {
-     path: 'personal-care',
+    path: 'personal-care',
     component: PersonalCareComponent
   },
   {
@@ -42,29 +35,35 @@ export const routes: Routes = [
     component: SustainableLivingComponent
   },
   {
-  path: 'The-Science',
-  component: TheScienceComponent
+    path: 'The-Science',
+    component: TheScienceComponent
   },
-
   {
     path: 'agriculture',
     component: AgricultureComponent
   },
   {
-  path: 'preventive-healthcare',
-  component: PreventiveHealthcareComponent
-},{
-  path: 'digital',
-  component: DigitalComponent
-},{
-  path: 'retreats',
-  component: RetreatsComponent
-},{
-  path: 'tourism',
-  component: TourismComponent
-<<<<<<< HEAD
-}
+    path: 'preventive-healthcare',
+    component: PreventiveHealthcareComponent
+  },
+  {
+    path: 'digital',
+    component: DigitalComponent
+  },
+  {
+    path: 'retreats',
+    component: RetreatsComponent
+  },
+  {
+    path: 'tourism',
+    component: TourismComponent
+  },
+  {
+    path: 'partner-invest',
+    component: PartnerInvestComponent
+  },
+  {
+    path: 'our-story',
+    component: OurStoryComponent
+  }
 ];
-=======
-}];
->>>>>>> dd0fde5 (first commit)

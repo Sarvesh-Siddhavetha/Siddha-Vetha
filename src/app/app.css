@@ -1,0 +1,11 @@
+.page-layout{
+    display: block;
+}
+
+.page-content{
+    margin-top: 70px;          /* Navbar height */
+    margin-left: 320px;        /* 300px sidebar + 20px gap */
+    padding-right: 30px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 70px);
+}
