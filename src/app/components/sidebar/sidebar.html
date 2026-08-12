@@ -1,84 +1,100 @@
-<aside class="sidebar">
+<aside class="sidebar" [class.sidebar--expanded]="isExpanded" [attr.aria-expanded]="isExpanded" aria-label="Primary navigation">
 
-    <div class="menu-section">
+    <button
+        class="sidebar-toggle"
+        type="button"
+        (click)="toggleSidebar()"
+        [attr.aria-label]="isExpanded ? 'Collapse sidebar' : 'Expand sidebar'"
+        aria-controls="sidebar-menu"
+    >
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+    </button>
 
-        <p class="menu-title">MAIN</p>
+    <nav id="sidebar-menu" class="sidebar-menu" *ngIf="isExpanded">
 
-        <a
-            routerLink="/home"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact:true}">
-            01 · Home
-        </a>
+        <div class="menu-section">
 
-    </div>
+            <p class="menu-title">MAIN</p>
 
-    <div class="menu-section">
+            <a
+                routerLink="/home"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}">
+                01 · Home
+            </a>
 
-        <p class="menu-title">SHOP</p>
+        </div>
 
-        <a routerLink="/consumer-wellness" routerLinkActive="active">
-            02 · Consumer Wellness
-        </a>
+        <div class="menu-section">
 
-        <a routerLink="/personal-care" routerLinkActive="active">
-            03 · Personal Care & Beauty
-        </a>
+            <p class="menu-title">SHOP</p>
 
-        <a routerLink="/sustainable-living" routerLinkActive="active">
-            04 · Sustainable Living
-        </a>
+            <a routerLink="/consumer-wellness" routerLinkActive="active">
+                02 · Consumer Wellness
+            </a>
 
-    </div>
+            <a routerLink="/personal-care" routerLinkActive="active">
+                03 · Personal Care & Beauty
+            </a>
 
-    <div class="menu-section">
+            <a routerLink="/sustainable-living" routerLinkActive="active">
+                04 · Sustainable Living
+            </a>
 
-        <p class="menu-title">EXPERIENCE</p>
+        </div>
 
-        <a routerLink="/retreats" routerLinkActive="active">
-            05 · Retreats & Experiences
-        </a>
+        <div class="menu-section">
 
-        <a routerLink="/tourism" routerLinkActive="active">
-            06 · Wellness Tourism
-        </a>
+            <p class="menu-title">EXPERIENCE</p>
 
-    </div>
+            <a routerLink="/retreats" routerLinkActive="active">
+                05 · Retreats & Experiences
+            </a>
 
-    <div class="menu-section">
+            <a routerLink="/tourism" routerLinkActive="active">
+                06 · Wellness Tourism
+            </a>
 
-        <p class="menu-title">INSTITUTIONS</p>
+        </div>
 
-        <a routerLink="/The-Science" routerLinkActive="active">
-            07 · The Science (Research & IP)
-        </a>
+        <div class="menu-section">
 
-        <a routerLink="/agriculture" routerLinkActive="active">
-            08 · Agriculture & Raw Materials
-        </a>
+            <p class="menu-title">INSTITUTIONS</p>
 
-        <a routerLink="/preventive-healthcare" routerLinkActive="active">
-            09 · Preventive Healthcare
-        </a>
+            <a routerLink="/The-Science" routerLinkActive="active">
+                07 · The Science (Research & IP)
+            </a>
 
-        <a routerLink="/digital" routerLinkActive="active">
-            10 · Digital
-        </a>
+            <a routerLink="/agriculture" routerLinkActive="active">
+                08 · Agriculture & Raw Materials
+            </a>
 
-    </div>
+            <a routerLink="/preventive-healthcare" routerLinkActive="active">
+                09 · Preventive Healthcare
+            </a>
 
-    <div class="menu-section">
+            <a routerLink="/digital" routerLinkActive="active">
+                10 · Digital
+            </a>
 
-        <p class="menu-title">COMPANY</p>
+        </div>
 
-        <a routerLink="/our-story" routerLinkActive="active">
-            11 · Our Story / The Campus
-        </a>
+        <div class="menu-section">
 
-        <a routerLink="/partner-invest" routerLinkActive="active">
-            12 · Partner / Invest
-        </a>
+            <p class="menu-title">COMPANY</p>
 
-    </div>
+            <a routerLink="/our-story" routerLinkActive="active">
+                11 · Our Story / The Campus
+            </a>
+
+            <a routerLink="/partner-invest" routerLinkActive="active">
+                12 · Partner / Invest
+            </a>
+
+        </div>
+
+    </nav>
 
 </aside>

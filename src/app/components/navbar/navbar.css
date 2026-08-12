@@ -14,7 +14,7 @@
 
     height: 80px;
 
-    background: #ffffff;
+    background: #0F172A;
 
     border-bottom: 1px solid #e8e8e8;
 
@@ -128,7 +128,7 @@
 
     text-decoration: none;
 
-    color: #1f1f1f;
+    color: #ffffff;
 
     font-size: 15px;
 
@@ -142,7 +142,7 @@
 
 .nav-links a:hover{
 
-    color: #184795;
+    color: var(--primary-green);
 
 }
 
@@ -160,7 +160,7 @@
 
     height: 2px;
 
-    background: #184795;
+    background: var(--primary-green);
 
     transition: .25s;
 
@@ -176,7 +176,7 @@
 
 .nav-links a.active{
 
-    color: #184795;
+    color: var(--primary-green);
 
     font-weight: 600;
 

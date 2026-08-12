@@ -16,7 +16,8 @@ export class ButtonComponent {
     | 'secondary'
     | 'outline'
     | 'dark'
-    | 'ghost' = 'primary';
+    | 'ghost'
+    | 'header' = 'primary';
 
   @Input() disabled = false;
 
