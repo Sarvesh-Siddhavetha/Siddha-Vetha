@@ -142,7 +142,7 @@
 
 .nav-links a:hover{
 
-    color: var(--primary-green);
+    color: #EC5611;
 
 }
 
@@ -160,7 +160,7 @@
 
     height: 2px;
 
-    background: var(--primary-green);
+    background: #EC5611;
 
     transition: .25s;
 
@@ -176,7 +176,7 @@
 
 .nav-links a.active{
 
-    color: var(--primary-green);
+    color: #EC5611;
 
     font-weight: 600;
 

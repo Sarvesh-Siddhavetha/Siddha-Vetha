@@ -1,3 +1,115 @@
+
+<section class="home-slider" aria-label="Featured Siddhavetha wellness moments">
+
+    <div class="slider-viewport">
+
+        <div
+            class="slider-slide"
+            *ngFor="let slide of slides; let i = index"
+            [class.is-active]="i === currentSlide"
+            [class.is-leaving]="i === previousSlide && i !== currentSlide"
+            [attr.aria-hidden]="i === currentSlide ? 'false' : 'true'">
+
+            <img [src]="slide.image" [alt]="slide.alt">
+
+        </div>
+
+        <div class="slider-overlay"></div>
+
+        <div class="slider-content">
+
+            <div class="container slider-content-inner">
+
+                <span class="slider-label">
+                    ANCIENT SCIENCE • MODERN WELLNESS
+                </span>
+
+                <h1>
+                    Healing that begins
+                    <br>
+                    in the soil.
+                </h1>
+
+                <p>
+                    Siddha wisdom, grown and crafted with care from our own 600-acre organic campus.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="slider-dots" aria-label="Slider navigation">
+
+            <button
+                *ngFor="let slide of slides; let i = index"
+                type="button"
+                class="slider-dot"
+                [class.is-active]="i === currentSlide"
+                [attr.aria-label]="'Show slide ' + (i + 1)"
+                [attr.aria-pressed]="i === currentSlide">
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     TRENDING NOW CAROUSEL
+========================================== -->
+
+<section class="trending-now">
+
+    <div class="container">
+
+        <h2 class="trending-title">Trending Now</h2>
+
+        <div class="trending-carousel">
+
+            <button 
+                class="carousel-button carousel-button--prev" 
+                (click)="prevTrending()"
+                [disabled]="trendingOffset === 0"
+                aria-label="Previous trending items">
+                ←
+            </button>
+
+            <div class="trending-grid">
+
+                <div 
+                    class="trending-card" 
+                    *ngFor="let item of getVisibleTrendingItems()">
+
+                    <div class="card-image-wrapper">
+                        <img [src]="item.image" [alt]="item.title" class="card-image">
+                        <div class="card-accent"></div>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.description }}</p>
+                        <span class="card-badge">{{ item.badge }}</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button 
+                class="carousel-button carousel-button--next" 
+                (click)="nextTrending()"
+                [disabled]="trendingOffset >= trendingItems.length - 3"
+                aria-label="Next trending items">
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
 <!-- ==========================================
      HERO SECTION
 ========================================== -->

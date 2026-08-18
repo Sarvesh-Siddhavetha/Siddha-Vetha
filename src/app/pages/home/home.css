@@ -1,3 +1,4 @@
+
 /* ===========================
    Base
 =========================== */
@@ -63,9 +64,19 @@ p{
     margin-top:40px;
 }
 
-/* ==========================================
-   HERO
-========================================== */
+.home-slider .slider-content-inner,
+.home-slider .slider-label,
+.home-slider .slider-content h1,
+.home-slider .slider-content p,
+.home-slider .slider-dot.is-active,
+.home-slider .slider-dot {
+    color:#fff !important;
+}
+
+.home-slider .slider-dot.is-active {
+    background:#fff !important;
+    border-color:#fff !important;
+}
 
 .hero{
 

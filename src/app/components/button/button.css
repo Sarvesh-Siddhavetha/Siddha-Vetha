@@ -46,7 +46,7 @@ button{
 
 .primary:hover{
 
-    background:var(--primary-green);
+    background:#EC5611;
 
     transform:translateY(-2px);
 
@@ -60,7 +60,7 @@ button{
 
 .secondary{
 
-    background:var(--primary-green);
+    background:#EC5611;
 
     color:white;
 
@@ -150,11 +150,11 @@ button{
 
 .header:hover{
 
-    background:var(--primary-green);
+    background:#EC5611;
 
     color:#fff;
 
-    border-color:var(--primary-green);
+    border-color:#EC5611;
 
     transform:translateY(-2px);
 
